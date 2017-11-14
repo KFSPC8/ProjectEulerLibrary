@@ -66,6 +66,31 @@ T fibI (T n)
 	return j;	      
 }
 
+template <typename T>
+T power (T base, int n)
+{	 
+	T product = base;
+	
+	for (int i=0; i<n-1; i++)
+		product *= base;
+		
+	return (n == 0) ? 1 : product;
+}
+
+template <typename T>
+T getSumDigits (T n)
+{
+	T sum = 0;
+	
+	while (n > 0)
+	{
+		sum += n % 10;
+		n /= 10; 
+	}
+	
+	return sum;
+}
+
 int main ()
 {
 	//Palindrome test
@@ -109,7 +134,23 @@ int main ()
 		cout << "fib(" << noToTest4[i] << ") is " << fibI (noToTest4[i]) << endl;
 	
 	cout << "----------------------------------------------------------------------------" << endl;
+	
+	//Power  test
+	pair <int, int> p[3];
+	p[0] = make_pair (2, 0);
+	p[1] = make_pair (1, 1);
+	p[2] = make_pair (3, 3);
+	
+	for (int i=0; i<3; i++)
+		cout << p[i].first << "^" << p[i].second << " = " << power (p[i].first, p[i].second) << endl;
+	
+	cout << "----------------------------------------------------------------------------" << endl;
+	
+	//Sum of digits test
+	int noToTest5[3] = {123, 12345, 3330};
+	
+	for (int i=0; i<3; i++)
+		cout << "Sum of digits of " << noToTest5[i] << " is " << getSumDigits (noToTest5[i]) << endl;
+	
+	cout << "----------------------------------------------------------------------------" << endl;
 }
-
-
-
