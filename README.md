@@ -18,5 +18,13 @@ Description: Takes in a value as argument and returns the factorial result of th
 
 Description: An iterative solution to compute a fibonacci number. Takes in the index of the fibonacci sequence as argument and returns the fibonacci result of the argument with the same data type.
 
+- Template signature: T power (T base, int n)
+
+Description: Takes in 2 values as arguments, first being the base of the number, second being the power in integer. Returns the power result which is of the same type as the base number.  
+
+- Template signature: T getSumDigits (T n)
+
+Description: Takes in a value as argument and returns the sum of all the digits of the value passed in.
+
 ## Credits
 - [Arne](https://github.com/KFSPC8), Main developer
