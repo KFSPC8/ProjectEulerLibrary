@@ -24,7 +24,7 @@ Description: Takes in 2 values as arguments, first being the base of the number,
 
 - Template signature: T getSumDigits (T n)
 
-Description: Takes in a value as argument and returns the sum of all the digits of the value passed in.
+Description: Takes in a value as argument and returns the sum of all the digits of the value passed in. *Note: Requires the power template
 
 ## Credits
 - [Arne](https://github.com/KFSPC8), Main developer
