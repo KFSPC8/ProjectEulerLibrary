@@ -26,5 +26,9 @@ Description: Takes in 2 values as arguments, first being the base of the number,
 
 Description: Takes in a value as argument and returns the sum of all the digits of the value passed in. *Note: Requires the power template
 
+- Template signature: string getBinary (T n)
+
+Description: Takes in a value in base-10 as argument and returns the binary representation of the value in string data type.
+
 ## Credits
 - [Arne](https://github.com/KFSPC8), Main developer
