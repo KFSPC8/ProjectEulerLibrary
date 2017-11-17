@@ -91,6 +91,24 @@ T getSumDigits (T n)
 	return sum;
 }
 
+template <typename T>
+string getBinary (T n)
+{
+	stringstream ss;
+	
+	while (n > 0)
+	{
+		ss << n % 2;
+		n /= 2;
+	}	 
+	
+	string str = ss.str();
+	string str2 (str);
+	reverse (str2.begin(), str2.end());
+	
+	return str2;
+}
+
 int main ()
 {
 	//Palindrome test
@@ -151,6 +169,17 @@ int main ()
 	
 	for (int i=0; i<3; i++)
 		cout << "Sum of digits of " << noToTest5[i] << " is " << getSumDigits (noToTest5[i]) << endl;
+	
+	cout << "----------------------------------------------------------------------------" << endl;
+	
+	//Get Binary test
+	int noToTest6[3] = {12, 15, 20};
+	
+	for (int i=0; i<3; i++)
+	{
+		cout << "Binary representation of " << noToTest6[i] << " is " 
+			 << getBinary (noToTest6[i]) << endl;
+	}
 	
 	cout << "----------------------------------------------------------------------------" << endl;
 }
